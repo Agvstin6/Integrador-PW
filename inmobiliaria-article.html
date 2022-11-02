@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,145 +9,255 @@
     <meta name="description" content="Inmobiliaria con años de experiencia en el rubro">
     <title>Inmobiliaria</title>
 
-    <style>
-        header{
-            background-color: green;
-            color: goldenrod;
-        }
-        footer{
-            background-color: green;
-        }
-        h3{
-            background-color: green;
-            color: goldenrod;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/408efe9e2a.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <a href="./inmobiliaria.html">
-           <h1>
-            Inmobiliaria
-           </h1>
-        </a>
 
-        <a href="">
+<body>
+    <header style="margin: 0px;">
+
+        <a href="" id="inicio-sesion">
             Iniciar Sesion
         </a>
 
+        <a href="./inmobiliaria.html">
+            <h1 style="padding-left:15">
+                <i>INMOBILIARIA</i>
+            </h1>
+        </a>
+
         <nav>
-            <ul>
+            <ul id="nav-pag">
                 <li>
-                    <a href="./inmobiliaria.html #buscador">Encuentra tu proximo hogar</a>
+                    <a href="inmobiliaria.html#buscador">Encuentra tu proximo hogar</a>
                 </li>
                 <li>
-                    <a href="./inmobiliaria.html #cotizador">Cotiza tu propiedad</a>
+                    <a href="inmobiliaria.html#cotizador">Cotiza tu propiedad</a>
                 </li>
                 <li>
-                    <a href="./inmobiliaria.html #seguros">Contrata nuestros seguros</a>
+                    <a href="inmobiliaria.html#seguros">Contrata nuestros seguros</a>
                 </li>
                 <li>
-                    <a href="./inmobiliaria.html #contacto">Contactanos</a>
+                    <a href="inmobiliaria.html#contacto">Contactanos</a>
                 </li>
             </ul>
         </nav>
-    </header> 
-    <main>
+    </header>
+    <main style="background-color: rgb(114, 112, 112);">
         <section id="articulo-venta">
-            <div>
-                <img src="./img/placeholder.png" alt="imagen-de-articulo">
+
+            <div id="imagen-casa" style="width: max-content;">
+                <img src="./css/img/placeholder.png" alt="imagen-de-articulo" width="800px" height="500px"
+                    style="border: 1px solid rgb(226, 197, 123) ;">
             </div>
-            <div>
+
+            <div id="descripcion-art">
                 <h2>Titulo de Publicación</h2>
                 <h5>Descripción</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, ad a? Repudiandae, aperiam tempore? Eligendi facilis nihil, repudiandae blanditiis, nostrum voluptate rerum voluptas minima dolorem quam, culpa quas aspernatur quos.</p>
+                <p style="max-width: 400px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, ad a?
+                    Repudiandae, aperiam
+                    tempore? Eligendi facilis nihil, repudiandae blanditiis, nostrum voluptate rerum voluptas minima
+                    dolorem quam, culpa quas aspernatur quos.</p>
                 <span>USD XXX.XXX</span>
-                <ul>
+
+                <ul id="caract-list">
                     <li>caracteristicas</li>
                     <li>caracteristicas</li>
                     <li>caracteristicas</li>
                     <li>caracteristicas</li>
                 </ul>
-                <span><i class="fa-solid fa-location-dot"></i>Ubicacion</span>
-                <span><i class="fa-solid fa-plus"></i>Añadir a Lista</span>
-                <a href=""><i class="fa-solid fa-share"></i>Compartir</a>
+                <div id="icons">
+                    <span><i class="fa-solid fa-location-dot"></i>Ubicacion</span>
+                    <span><i class="fa-solid fa-plus"></i>Añadir a Lista</span>
+                    <a href=""><i class="fa-solid fa-share"></i>Compartir</a>
+                </div>
             </div>
+
         </section>
-        <section id="caract-art">    
+
+        <section id="caract-art">
             <div>
-                <h3>Caracteristicas de la Propiedad</h3>
-                <dl>
-                    <dt><b><i class="fa-solid fa-file-lines"></i>Caracteristicas generales</b></dt>
-                    <dd>
-                        Apto crédito
-                        Cantidad plantas: 5 o más
-                    </dd>
-                    <dt><b><i class="fa-solid fa-door-open"></i>Ambientes</b></dt>
-                    <dd>
-                        Balcón
-                        Cocina
-                        Comedor
-                        Lavadero
-                        Living
-                        Toilette
-                    </dd>
-                    <dt><b><i class="fa-solid fa-file-lines"></i>Caracteristicas</b></dt>
-                    <dd>Aire acondicionado</dd>
-                    <dt><b><i class="fa-solid fa-map"></i>Zonas aledañas</b></dt>
-                    <dd>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52563.483211795945!2d-58.45603497728579!3d-34.5733576752372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1665636699912!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </dd>
+                <h3 style="text-align: center;">Caracteristicas de la Propiedad</h3>
+                <dl id="caract-gral">
+
+                    <div style="border-bottom: 5px solid rgb(114, 112, 112);">
+                        <dt><b><i class="fa-solid fa-file-lines"></i>Caracteristicas generales</b></dt>
+                        <dd>
+                            Apto crédito
+                            Cantidad plantas: 5 o más
+                        </dd>
+                    </div>
+
+                    <div style="border-bottom: 5px solid rgb(114, 112, 112);">
+                        <dt><b><i class="fa-solid fa-door-open"></i>Ambientes</b></dt>
+                        <dd>
+                            Balcón
+                            Cocina
+                            Comedor
+                            Lavadero
+                            Living
+                            Toilette
+                        </dd>
+                    </div>
+
+                    <div style="border-bottom: 5px solid rgb(114, 112, 112);">
+                        <dt><b><i class="fa-solid fa-file-lines"></i>Caracteristicas</b></dt>
+                        <dd>Aire acondicionado</dd>
+                    </div>
+
+                    <div style="border-bottom: 5px solid rgb(114, 112, 112);">
+                        <dt><b><i class="fa-solid fa-map"></i>Zonas aledañas</b></dt>
+                        <dd>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52563.483211795945!2d-58.45603497728579!3d-34.5733576752372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1665636699912!5m2!1ses!2sar"
+                                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </dd>
+                    </div>
                 </dl>
             </div>
-            <div>
-                <h3>Info del vendedor</h3>
-                <span>Vendedor verificado<i class="fa-solid fa-badge-check"></i></span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a href="">Contactar</a>
-                <a href="">Solicitar visita</a>
+        </section>
+
+        <section id="info-vendedor">
+            <div id="informacion">
+                <h3 style="text-align: center;">Info del vendedor</h3>
+                <span><i class="fa-solid fa-shield"></i>Vendedor verificado</span>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <div style="display: flex; flex-direction:row; justify-content:space-around;">
+                    <a href="">Contactar</a>
+                    <a href="">Solicitar visita</a>
+                </div>
                 <input type="text" name="mensaje" id="contacto-vendedor" placeholder="Dejar un Mensaje...">
-                <input type="submit" value="Enviar">
-                <h4>Consejos de Seguridad <i class="fa-solid fa-shield-check"></i></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorum dicta.</p>
+                <input type="submit" value="Enviar" style="background-color: rgb(226, 197, 123);">
+                <h4
+                    style="text-align: center; background-color: rgba(148, 144, 144, 0.425); border-bottom: rgb(226, 197, 123) 1px solid; border-top: rgb(226, 197, 123) 1px solid;">
+                    Consejos de Seguridad <i class="fa-solid fa-shield"></i></h4>
+                <p style="padding: 10px; margin:0px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae, dolorum dicta.</p>
             </div>
         </section>
-        <section>
+
+        <section id="otras-props">
             <h3>Propiedades Similares</h3>
-            <a href=""><img src="./img/placeholder.png" alt="casa-similar" width="200"></a>
-            <a href=""><img src="./img/placeholder.png" alt="casa-similar" width="200"></a>
-            <a href=""><img src="./img/placeholder.png" alt="casa-similar" width="200"></a>
+
+            <div id="prop-simil">
+
+                <div class="item" id="item1" style="height: fit-content;">
+                    <a href="./inmobiliaria-article.html">
+                        <li id="int-item">
+                            <div>
+                                <img src="./css/img/placeholder.png" alt="vista-previa" width="200px"
+                                    style="border: 1px solid rgb(226, 197, 123);">
+                            </div>
+                            <div style="padding-left: 10px;">
+                                <h4>Titulo de Publicacion</h4>
+                                <p style="width: 150px;">Descripcion: Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.</p>
+                                <i class="fa-solid fa-location-pin"></i>
+                                <span>Ubicacion</span>
+                                <i class="fa-solid fa-images"></i>
+                                <span>Imagenes</span>
+                                <i class="fa-solid fa-phone"></i>
+                                <span>Contacto</span>
+                            </div>
+                        </li>
+                    </a>
+                </div>
+
+                <div class="item" id="item1" style="height: fit-content;">
+                    <a href="./inmobiliaria-article.html">
+                        <li id="int-item">
+                            <div>
+                                <img src="./css/img/placeholder.png" alt="vista-previa" width="200px"
+                                    style="border: 1px solid rgb(226, 197, 123);">
+                            </div>
+                            <div style="padding-left: 10px;">
+                                <h4>Titulo de Publicacion</h4>
+                                <p style="width: 150px;">Descripcion: Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.</p>
+                                <i class="fa-solid fa-location-pin"></i>
+                                <span>Ubicacion</span>
+                                <i class="fa-solid fa-images"></i>
+                                <span>Imagenes</span>
+                                <i class="fa-solid fa-phone"></i>
+                                <span>Contacto</span>
+                            </div>
+                        </li>
+                    </a>
+                </div>
+
+                <div class="item" id="item1" style="height: fit-content;">
+                    <a href="./inmobiliaria-article.html">
+                        <li id="int-item">
+                            <div>
+                                <img src="./css/img/placeholder.png" alt="vista-previa" width="200px"
+                                    style="border: 1px solid rgb(226, 197, 123);">
+                            </div>
+                            <div style="padding-left: 10px;">
+                                <h4>Titulo de Publicacion</h4>
+                                <p style="width: 150px;">Descripcion: Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.</p>
+                                <i class="fa-solid fa-location-pin"></i>
+                                <span>Ubicacion</span>
+                                <i class="fa-solid fa-images"></i>
+                                <span>Imagenes</span>
+                                <i class="fa-solid fa-phone"></i>
+                                <span>Contacto</span>
+                            </div>
+                        </li>
+                    </a>
+                </div>
+
+            </div>
+
         </section>
+
     </main>
-    <footer>
-        <div>
-            <h3>Informacion</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae perferendis tenetur nemo, deleniti veritatis natus delectus ipsa vitae non. Sequi dolores deleniti doloremque! Quas placeat sunt voluptatem adipisci officia?</p>
-        </div>
+    <footer style="border-top: rgb(226, 197, 123) 1px solid;">
 
-     <div>
-        <nav>
-            <h4>Navegador</h4>
-            <ul>
-                <li><a href="#buscador">Buscador de viviendas</a></li>
-                <li><a href="#destacados">Descatados</a></li>
-                <li><a href="#cotizador">Cotiza con nosotros</a></li>
-                <li><a href="#seguros">Nuestros seguros</a></li>
-           </ul>
-        </nav>
-     </div>
+        <div id="footer">
+            <div>
+                <span><b style="font-size: larger; padding-left: 20px;">Informacion</b></span>
+                <p style="width: 200px; margin-right: 100px; padding-left:20px;">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Libero recusandae perferendis tenetur nemo,
+                    deleniti veritatis natus delectus ipsa vitae non. Sequi dolores deleniti doloremque! Quas placeat
+                    sunt
+                    voluptatem adipisci officia?</p>
+            </div>
 
-        <div id="contacto">
-            <h4>Contacto</h4>
-            <ul>
-                <li><i class="fa-regular fa-envelope"></i>inmobiliaria@gmail.com</li>
-                <li><i class="fa-brands fa-instagram"></i>@inmobiliaria</li>
-                <li><i class="fa-brands fa-whatsapp"></i>+54-9-11-1234-5678</li>
-                <li><i class="fa-brands fa-twitter"></i>@inmobiliaria.tw</li>
-                <li><i class="fa-brands fa-facebook"></i>inmobiliaria.fb</li>
-            </ul>
+            <div>
+                <nav>
+                    <h4>Navegador</h4>
+                    <ul style="list-style: armenian; padding-left:0px;">
+                        <li><a href="inmobiliaria.html#buscador">Buscador de viviendas</a></li>
+                        <li><a href="inmobiliaria.html#destacados">Descatados</a></li>
+                        <li><a href="inmobiliaria.html#destacados">Cotiza con nosotros</a></li>
+                        <li><a href="inmobiliaria.html#seguros">Nuestros seguros</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="contacto">
+                <h4>Contacto</h4>
+                <ul style="list-style: none; padding-left:0px;">
+                    <li><a href="" target="_blank"><i class="fa-regular fa-envelope"></i>inmobiliaria@gmail.com</a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i>@inmobiliaria</a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i>+54-9-11-1234-5678</a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-twitter"></i>@inmobiliaria.tw</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                class="fa-brands fa-facebook"></i>inmobiliaria.fb</a></li>
+                </ul>
+            </div>
+            <div style="position:relative; top: 180px; height: 1em;">
+                <span><a href=""> Terms of service</a></span> <span><a href="">Privacy Policy</a></span> <span><i
+                        class="fa-solid fa-copyright"></i><i>Inmobiliaria,SA 2022</i></span>
+            </div>
         </div>
-        <span><a href=""> Terms of service</a></span>     <span><a href="">Privacy Policy</a></span>     <span><i class="fa-solid fa-copyright"></i><i>Inmobiliaria,SA 2022</i></span>
     </footer>
-</body> 
-</html>   
+</body>
+
+</html>

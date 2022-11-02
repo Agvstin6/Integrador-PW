@@ -1,0 +1,292 @@
+html {
+    font-family: 'IM Fell French Canon', serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    background: rgb(77, 76, 76);
+    background: linear-gradient(0deg, rgba(77, 76, 76, 1) 0%, rgba(43, 43, 43, 1) 100%);
+    color: rgb(226, 197, 123);
+    padding: 5px;
+    border-bottom: rgb(226, 197, 123) solid 1px;
+}
+
+#nav-pag li {
+    border-left: solid rgb(226, 197, 123) 1px;
+    display: inline;
+    padding: 5px;
+    float: right;
+    position: relative;
+    bottom: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#inicio-sesion {
+    float: right;
+    position: relative;
+    padding: 5px;
+    border-left: 1px solid rgb(226, 197, 123);
+    bottom: 20px;
+}
+
+#buscador {
+    background-image: url(./img/67709-buenos-aires.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#busqueda {
+    background-color: rgba(95, 95, 95, 0.815);
+    border: solid black 1px;
+    text-align: left;
+    width: 45%;
+    height: 310px;
+    margin: calc(5%);
+    overflow-y: scroll;
+}
+
+.opcion {
+    border: 1px solid black;
+    text-decoration: none;
+    margin-right: 40px;
+    line-height: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#titulo-busqueda {
+    position: relative;
+    border: solid black 1px;
+    color: rgb(226, 197, 123);
+    background-color: rgb(55, 56, 55);
+    height: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
+#inputs {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    background-color: rgba(77, 76, 76, 1);
+    width: fit-content;
+    height: max-content;
+    border: solid black 1px;
+
+}
+
+#map {
+    width: fit-content;
+    margin: calc(5%);
+    border: solid black 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+link {
+    text-decoration: none;
+    color: rgb(226, 197, 123);
+}
+
+:visited {
+    text-decoration: none;
+    color: rgb(226, 197, 123);
+}
+
+#listado {
+    background-color: rgb(77, 76, 76);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.item {
+    background-color: rgba(43, 43, 43, 1);
+    border: rgb(226, 197, 123) solid 1px;
+    padding: 25px;
+    margin: 10px;
+    width: fit-content;
+}
+
+#int-item {
+    display: flex;
+    flex-direction: row;
+}
+
+#cotizador {
+    height: 300px;
+    background-image: url(./img/stock-photo-accountant-making-invoice-on-computer-at-desk-1660394551.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cotizar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(95, 95, 95, 0.815);
+}
+
+#cotizar {
+    position: relative;
+    top: 230px;
+    border-bottom: rgb(226, 197, 123) 1px solid;
+    border-top: rgb(226, 197, 123) 1px solid;
+}
+
+#seguros {
+    background-color: rgb(77, 76, 76);
+    height: 300px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.seguro {
+    text-align: center;
+    position: relative;
+    top: 20px;
+    background-color: rgb(55, 56, 55);
+    border: rgb(226, 197, 123) solid 1px;
+    height: fit-content;
+    font-size: large;
+}
+
+#sobre-nosotros {
+    background-color: rgb(77, 76, 76);
+    margin: 0%;
+    height: 200px;
+    color: rgb(226, 197, 123);
+}
+
+h3 {
+    background-color: rgb(55, 58, 55);
+    color: rgb(228, 198, 123);
+    margin: 0%;
+    border-top: rgb(226, 197, 123) solid 1px;
+    height: 30px;
+    text-align: justify;
+    padding-left: 10px;
+}
+
+
+#footer {
+    background-color: rgb(51, 53, 51);
+    color: rgb(226, 197, 123);
+    margin: 0px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+
+}
+
+/*PAGINA 2*/
+
+#articulo-venta {
+    background-color: rgb(114, 112, 112);
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: 1;
+
+}
+
+#imagen-casa {
+    margin: 0px;
+    padding: 15px;
+    padding-left: 30px;
+    grid-column: 1 / 2;
+}
+
+#descripcion-art {
+    background-color: rgba(77, 76, 76, 1);
+    grid-column: 2 / 3;
+    border: rgb(226, 197, 123) solid 1px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgb(228, 210, 167);
+    height: fit-content;
+    width: 450px;
+}
+
+#caract-list {
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#icons {
+    padding-left: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 40px;
+}
+
+#caract-art {
+    width: 800px;
+    margin-left: 30px;
+    background-color: rgba(148, 144, 144, 0.425);
+}
+
+#caract-gral {
+    min-width: 800px;
+    max-width: 800px;
+    padding-left: 5px;
+    color: rgb(228, 210, 167);
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+#info-vendedor {
+    width: 455px;
+    background-color: rgba(77, 76, 76, 1);
+    color: rgb(228, 210, 167);
+    border: rgb(228, 198, 123) solid 1px;
+
+    position: relative;
+    left: 850px;
+    bottom: 670px;
+}
+
+#informacion {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#prop-simil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.item {
+    background-color: rgba(43, 43, 43, 1);
+    border: rgb(226, 197, 123) solid 1px;
+    padding: 15px;
+    margin: 5px;
+    width: fit-content;
+}
+
+#int-item {
+    display: flex;
+    flex-direction: row;
+}
